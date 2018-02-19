@@ -1,65 +1,111 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Christa Fields' Student Bio Page</title>
-</head>
+    <head>
+            <meta charset="UTF-8">
+            <title>Web_HW_Index</title>
+            
+            <!-- Bring in our bootstrap stylesheet -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+            <link rel="stylesheet" href="Web_HW.css">>
+    </head>
+
+<!-- Navigation Bar-->
+<header>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <a target="_blank" href="Web_HW_Landing.html"> <h1 class="navbar-brand">Latitude</h1></a>
+        </div>
+        <div class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <!-- links -->
+                    <li><a class="dropdown-item" target="_blank" href="Web_HW_Comparisons_Temp.html">Max Temperature</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="Web_HW_Comparisons_Humidity.html">Humidity</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="Web_HW_Comparisons_Cloudiness.html">Cloudiness</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="Web_HW_Comparisons_WindSpeed.html">Wind Speed</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a target="_blank" href="#">Comparison</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a target="_blank" href="#">Data</a></li>
+                </ul>
+            </li>
+            <li><a target="_blank" href="Web_HW_Comparisons.html">Comparisons</a></li>
+            <li><a target="_blank" href="Web_HW_Data.html">Data</a></li>
+        </div>
+    </div>
+    </nav>
+</header>
+
+<!-- Main Content Area-->
 
 <body>
-  <section>
-    <h1>Christa Fields</h1>
-    <a target="_blank" href="Bootcamp Practice Files/cfieldsBootcamp.github.io/cfields_image.png">
-      <img src="cfields_image.png" alt="cfields image">
-    </a>
 
-    <p>Christa Fields joined the Alliance of Community Health Plans in April 2017. As a Business Analyst, she supports ACHP’s analytics agenda focusing on health plan quality improvement and pharmacy benchmarking.</p>>
-    <br>
-    <p>Prior to joining ACHP, Christa was a Policy Analyst for the Program on Medicare Policy at the Henry J. Kaiser Family Foundation. Christa holds a Master of Public Health from the University of Wisconsin-Madison and a Bachelor of Arts in Music from Spelman College.</p>
+  <!-- Creates the Overall Grid -->
+  <div class="container">
 
-    <h3>Social Media Links</h3>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/christa-fields-9000b746/">LinkedIn</a></li>
-      <li>Facebook</li>
-      <li>Twitter</li>
-      <li>Snapchat</li>
-      <li>Pinterest</li>
-    </ul>
-  
-    <body>
-            <table border = "1">
-                <thead>
-                    <tr>
-                    	<th colspan = "4"> These are a few of my favorite things...</th>
-                    </tr>
-                    <tr>
-                        <th>Movies</th>
-                        <th>Songs</th>
-                        <th>Books</th>
-                        <th>Activities</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        <tr>
-                            <td>Family Stone</td>
-                            <td>Jasmine Sulivan</td>
-                            <td>The Giver</td>
-                            <td>coding</td>  
-                        </tr>
-                        <tr>
-                                <td>The Devil Wears Prada</td>
-                                <td>Corrine Bailey Rae</td>
-                                <td>Harry Potter</td>
-                                <td>Salsa Dancing</td>  
-                        </tr>                
-                        <tr>
-                                <td>Batman</td>
-                                <td>Daley</td>
-                                <td>The Warmth of Other Suns</td>
-                                <td>piano playing</td>  
-                        </tr>    
+    <!-- Second Row -->
+    <div class="row">
 
-</section>
+      <!-- First of two columns -->
+      <div class="col-md-6">
+       
+        <h1>Summary: Latitude vs. X</h1>
+        <br/>
+        
+        <figure>
+                <a target="_blank" href="images/Python-APIs-HW/Temperature (F) vs. Latitude.png">
+                    <img src="images/Temperature (F) vs. Latitude.png" alt="Temperature vs. Latitude">
+                </a>
+        </figure>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this anlaysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+        <br>
+        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. laitude.  factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of ay trends and correlation witnessed.</p>
+        <br/>
+      </div>
+
+      <!-- Second of two columns -->
+      <div class="col-md-6">
+        
+        <h1>Visualizations</h1>
+        <div class="row">
+                <div class="col-md-6">
+                                
+                        <figure>
+                            <a target="_blank" href="images/Temperature (F) vs. Latitude.png">
+                                <img src="images/Temperature (F) vs. Latitude.png" alt="Temperature vs. Latitude">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <figure>
+                            <a target="_blank" href="images/Cloudiness (%) vs. Latitude.png">
+                                <img src="images/Cloudiness (%) vs. Latitude.png" alt="Temperature vs. Latitude">
+                            </a>
+                        </figure>
+                    </div>
+        </div>
+        <div class ="row">
+                <div class="col-md-6">
+                        <figure>
+                            <a target="_blank" href="images/Humidity (%) vs. Latitude.png">
+                                <img src="images/Humidity (%) vs. Latitude.png" alt="Temperature vs. Latitude">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <figure>
+                            <a target="_blank" href="images/Wind Speed (mph) vs. Latitude.png">
+                                <img src="images/Wind Speed (mph) vs. Latitude.png" alt="Temperature vs. Latitude">
+                            </a>
+                        </figure>
+                    </div> 
+        </div>
+
+  </div>
+
 </body>
-
-    
+</html>
